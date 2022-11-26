@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cookie.js"></script>
+    <script src="mainJS.js"></script>
+</head>
+<body>
+    <label for="fname" >first name: </label>
+    <input type="text" id="fname"><br><br>
+    <label for="age">age:</label>
+    <input type="text" id="age"><br><br>
+    <label>select your gender:</label><br><br>
+    <input type="radio" id="btn1" value="f" name="gender">
+    <label for="btn1"><img src="profile/female.jpg" width="200" height="200"></label>
+    <input type="radio" id="btn2" value="m" name="gender">
+    <label for="btn2"><img src="profile/male.jpg" alt="male" width="100" height="100"></label><br><br>
+    <label for="color" >choose your fav color:</label>
+    <select id="color" name="color">
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+    </select><br><br>
+    <input type="button" value="register" onclick="nextPage()">
+</body>
+</html>
