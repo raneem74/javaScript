@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <img  src="icon1.gif" id="right">
+        <img  src="icon2.gif" id="left">
+        <img  src="TOP.JPG" id="center">
+    </div>
+    <input type="button" value="reset" onclick="reset()">
+    <input type="button" value="stop" onclick="stop()">
+    <br><br>
+    <div id="pos1" style="font-color:blue"></div>
+    <div id="pos2"></div>
+    <script>
+        var timer;
+        move();
+        var dircImg1=-10,dircImg2=+10,dircImg3=-10;//direction of image
+        function move()
+        {
+            var size=450;//size of container-imgsize
+            //move img1
+            var img=document.getElementById("right")
+            var actLoc1=getComputedStyle(img).left;
+            var actval1=parseInt(actLoc1)
+            //actval1=(actval1+dircImg1+size)%size;
+            actval1+=dircImg1;
+            if(actval1<0||actval1>450)dircImg1*=-1;
+            img.style.left=actval1+"px"
+
+            //move img2
+            var img=document.getElementById("left")
+            var actLoc2=getComputedStyle(img).left;
+            var actval2=parseInt(actLoc2)
+            actval2+=dircImg2;
+            if(actval2<0||actval2>450)dircImg2*=-1;
+            img.style.left=actval2+"px"
+
+            //move img3
+            var img=document.getElementById("center")
+            var actLoc3=getComputedStyle(img).top;
+            var actval3=parseInt(actLoc3)
+            //actval3+=dircImg3;
+            //if(actval3<50||actval3>450)dircImg3*=-1;
+            actval3+=dircImg3;
+            if(actval3<0||actval3>450)
+                dircImg3*=-1;
+            console.log(actval3);
+            console.log("dic");
+            console.log(dircImg3);
+
+            img.style.top=actval3+"px"
+
+            timer=setTimeout("move()",50);
+            document.getElementById('pos1').innerText=`<img src='icon1.gif' style="left:${actval1}">`
+            document.getElementById('pos2').innerText=`<img src='icon2.gif' style="left:${actval2}">`
+        }
+        function stop()
+        {
+            clearTimeout(timer);
+        }
+        function reset()
+        {
+            document.getElementById('right').style.left="450px";
+            document.getElementById('right').style.top="250px";
+            document.getElementById('left').style.left="0px";
+            document.getElementById('left').style.top="250px";
+            document.getElementById('center').style.left="250px";
+            document.getElementById('center').style.top="450px";
+
+        }
+
+
+    </script>
+</body>
+</html>

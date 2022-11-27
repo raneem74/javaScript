@@ -1,0 +1,22 @@
+#container{
+    border-style: solid;
+    border-color: brown;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+#center { 
+position: absolute;
+top: 450px;
+left: 250px;   
+}  
+#left { 
+position: absolute;
+top: 250px;
+left: 0px;   
+}  
+#right {  
+position: absolute;
+top: 250px;
+left: 450px;   
+}  
