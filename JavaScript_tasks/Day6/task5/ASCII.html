@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.onkeydown = function (e) {
+        if(e.key=="Control"||e.key=="Enter")
+        window.alert(`your key is ${e.key}`)
+        else 
+        //var ascii=e.charCodeAt(0);   
+        window.alert(`your ascii is ${e.keyCode}`)
+
+        console.log(e);
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
