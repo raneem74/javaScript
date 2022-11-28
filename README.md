@@ -7,10 +7,13 @@ https://user-images.githubusercontent.com/119134294/204125977-a7e6e7fe-2003-43ab
 
 
 
+![Day6task2](https://user-images.githubusercontent.com/119134294/204126135-97514ba4-be01-4b32-9ef3-a285fff2fd31.PNG)
+
+
 https://user-images.githubusercontent.com/119134294/204234124-342c5db5-e5b5-49be-8a2b-d5d35256d979.mp4
 
 
-![Day6task2](https://user-images.githubusercontent.com/119134294/204126135-97514ba4-be01-4b32-9ef3-a285fff2fd31.PNG)
+
 
 
 https://user-images.githubusercontent.com/119134294/204137640-379d41ba-5d6e-4698-a8b3-3ec5ea1ba07b.mp4
